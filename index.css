@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .from-down{
+        @apply [&]:opacity-0 [&]:translate-y-12;
+    }
+
+    .from-up{
+        @apply [&]:opacity-0 [&]:-translate-y-32;
+    }
+    
+    .from-left{
+        @apply [&]:opacity-0 [&]:-translate-x-full;
+    }
+
+    .from-right{
+        @apply [&]:opacity-0 [&]:translate-x-full;
+
+    }
+    
+    .first{
+        transition: opacity 1s linear, transform 1s linear, width 1s linear, height 1s linear;
+    }
+    .second{
+        transition: opacity 1s linear 400ms, transform 1s linear 400ms, width 1s linear, height 1s linear;
+    }
+    .third{
+        transition: opacity 1s linear 800ms, transform 1s linear 800ms, width 1s linear, height 1s linear;
+    }
+    .four{
+        transition: opacity 1s linear 1200ms, transform 1s linear 1200ms, width 1s linear,height 1s linear;
+    }
+    .five{
+        transition: opacity 1s linear 1600ms, transform 1s linear 1600ms, width 1s linear,height 1s linear;
+    }
+
+    .from-rotate{
+        @apply [&]:opacity-0 [&]:-translate-x-full [&]:rotate-90;
+
+
+    }
+    .from-z{
+        @apply [&]:opacity-0 [&]:scale-0;
+    }
+
+
+    /* .active{
+        @apply [&]:block
+    } */
+    
+
+}
